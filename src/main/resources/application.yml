@@ -1,0 +1,10 @@
+server:
+  port: ${REGISTRY_SERVER_PORT:8761}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    eviction-interval-timer-in-ms: 1000
+    max.time.for.replication: 30000
